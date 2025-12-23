@@ -41,4 +41,8 @@ Eg. ref_clk = 5000MHZ, Baud rate = 9600, no. of cycles required to send data = ?
       | tx ---->|----------------------->| rx      |
       | donetx->|                        | donerx  |
       +---------+                        +---------+
- 
+
+ * The interface is like a bundle of wires which are used to drive/read the signals via modport.
+ * The tx and rx implement the transmit and the receive logic with the help of interface. 
+ * The top module instantiates and connects the interface, transmitter, and receiver, provides clock and reset, and defines how the UART system is wired and used.
+ * The testbench is s aself checking testbench with randomization. 
