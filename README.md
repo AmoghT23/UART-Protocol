@@ -29,5 +29,7 @@ Eg. ref_clk = 5000MHZ, Baud rate = 9600, no. of cycles required to send data = ?
 * The input will be parallel frame and it will be sent over the TX(master) and RX(slave).
 
 * Oversampling (at the slave) -> used to save the data so that the data is not lost.
+  
+* The sampling is done in between so that we get only the data which we require.
 
  
